@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  public title:string = 'Hola mundo';
-  public counter: number = 10;
+  public title: string = 'Hola mundo';
 
 }
