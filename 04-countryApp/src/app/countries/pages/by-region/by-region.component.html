@@ -1,1 +1,15 @@
-<p>by-region works!</p>
+<h2>Por Región</h2>
+<hr>
+
+<div class="row">
+  <div class="col text-center">
+    <!-- Searchbox -->
+    <shared-search-select [regions]="regions" [selectedRegion]="selectedRegion"  (onValue)="searchByRegion($event)"></shared-search-select>
+  </div>
+</div>
+<div class="row">
+  <div class="col">
+    <hr>
+    <countries-table [countries]="countries"></countries-table>
+  </div>
+</div>

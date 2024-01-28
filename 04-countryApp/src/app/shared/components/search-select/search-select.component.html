@@ -1,0 +1,7 @@
+<!-- <select class="form-select" name="selectBox" id="selectBox" (change)="emitSearch(selectBox.value)" #selectBox>
+  <option>Selecciona una opción</option>
+  <option *ngFor="let option of options">{{ option }}</option>
+</select>
+ -->
+
+<button class="btn mx-3"[ngClass]="{'btn-outline-primary': selectedRegion === region}" *ngFor="let region of regions" (click)="emitSearch(region)" #btnSelect>{{ region }}</button>
