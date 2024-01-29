@@ -1,0 +1,64 @@
+<p-panel class="p-1" header="Pipes Numéricos">
+  <h1>Pipes Básicos</h1>
+  <p>Pipes incluídos en Angular - Usualmente en Common Modules</p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
+      <p>
+        Saludos {{ activeClient.name }}, es un placer
+        {{ activeClient.gender | i18nSelect : invitationMap }} a nuestro evento.
+      </p>
+      <p-button (click)="toggleClient()" label="Cambiar persona"> </p-button>
+    </p-fieldset>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
+      <p>
+        {{ clients.length | i18nPlural : clientsMap }}
+      </p>
+      <p-button label="Borrar cliente" (click)="deleteClient()"></p-button>
+    </p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="Slice Pipe" [toggleable]="true">
+      <b>Original</b>
+      <pre>{{ clients }}</pre>
+
+      <b>Slice:0:2</b>
+      <pre>{{ clients | slice : 0 : 2 }}</pre>
+
+      <b>Slice:1:2</b>
+      <pre>{{ clients | slice : 1 : 2 }}</pre>
+
+      <b>Slice:0:-2</b>
+      <pre>{{ clients | slice : 0 : -2 }}</pre>
+    </p-fieldset>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="Json Pipe" [toggleable]="true">
+      <pre>{{ person | json }}</pre>
+    </p-fieldset>
+  </div>
+
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="KeyValue Pipe" [toggleable]="true">
+      <ul>
+        <li *ngFor="let item of person | keyvalue">
+          <b>{{item.key | titlecase}}</b> : {{item.value}}
+        </li>
+      </ul>
+    </p-fieldset>
+  </div>
+  <div class="col-12 md:col-6">
+    <p-fieldset legend="Async Pipe" [toggleable]="true">
+      <pre>{{myObservableTimer | async }}</pre>
+      <pre *ngIf="!(myObservableTimer |async)">Resolviendo...</pre>
+
+      <pre>{{promiseValue | async }}</pre>
+      <pre *ngIf="!(promiseValue |async)">Resolviendo promesa...</pre>
+    </p-fieldset>
+  </div>
+</div>
