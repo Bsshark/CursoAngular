@@ -1,0 +1,8 @@
+<h2 mat-dialog-title>¿Borrar héroe?</h2>
+<mat-dialog-content>Esta acción borrará el héroe {{data.superhero}}. Esta acción no se puede deshacer.</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()" color="primary">Cancelar</button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+  <span class="spacer"></span>
+  <button mat-button (click)="onConfirm()" color="warn">Borrar</button>
+</mat-dialog-actions>
