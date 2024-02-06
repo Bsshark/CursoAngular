@@ -5,6 +5,12 @@
     {
       "type": "npm",
       "script": "start",
+<<<<<<< HEAD
+=======
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+>>>>>>> b72ad81767c0ad272214ce824481058d1b19e6a1
       "isBackground": true,
       "problemMatcher": {
         "owner": "typescript",
