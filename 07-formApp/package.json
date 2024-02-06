@@ -3,7 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+<<<<<<< Updated upstream
     "start": "ng serve",
+=======
+    "start": "ng serve -o",
+>>>>>>> Stashed changes
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
