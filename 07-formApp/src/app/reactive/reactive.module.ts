@@ -2,15 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ReactiveRoutingModule } from './reactive-routing.module';
-<<<<<<< Updated upstream
 
-
-@NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    ReactiveRoutingModule
-=======
 import { BasicPageComponent } from './pages/basic-page/basic-page.component';
 import { DynamicPageComponent } from './pages/dynamic-page/dynamic-page.component';
 import { SwitchesPageComponent } from './pages/switches-page/switches-page.component';
@@ -27,7 +19,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     ReactiveRoutingModule,
     ReactiveFormsModule
->>>>>>> Stashed changes
   ]
 })
 export class ReactiveModule { }

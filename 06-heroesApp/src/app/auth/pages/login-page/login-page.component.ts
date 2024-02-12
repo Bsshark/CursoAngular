@@ -1,19 +1,11 @@
 import { Component } from '@angular/core';
-<<<<<<< HEAD
-=======
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
->>>>>>> b72ad81767c0ad272214ce824481058d1b19e6a1
 
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
-<<<<<<< HEAD
-  styles: ``
-})
-export class LoginPageComponent {
 
-=======
   styles: ``,
 })
 export class LoginPageComponent {
@@ -26,5 +18,4 @@ export class LoginPageComponent {
         this.router.navigate(['/']);
       });
   }
->>>>>>> b72ad81767c0ad272214ce824481058d1b19e6a1
 }

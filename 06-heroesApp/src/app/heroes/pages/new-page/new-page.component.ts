@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-=======
 import { Hero } from './../../interfaces/hero.interface';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
@@ -11,17 +8,10 @@ import { filter, switchMap, tap } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmDialogComponent } from '../../components/confirm-dialog/confirm-dialog.component';
->>>>>>> b72ad81767c0ad272214ce824481058d1b19e6a1
 
 @Component({
   selector: 'app-new-page',
   templateUrl: './new-page.component.html',
-<<<<<<< HEAD
-  styles: ``
-})
-export class NewPageComponent {
-
-=======
   styles: ``,
 })
 export class NewPageComponent implements OnInit {
@@ -114,5 +104,4 @@ export class NewPageComponent implements OnInit {
       duration: 2500,
     });
   }
->>>>>>> b72ad81767c0ad272214ce824481058d1b19e6a1
 }

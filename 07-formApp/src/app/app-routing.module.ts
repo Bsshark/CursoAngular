@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-<<<<<<< Updated upstream
 
-const routes: Routes = [];
-=======
 import { AuthModule } from './auth/auth.module';
 
 const routes: Routes = [
@@ -20,7 +17,6 @@ const routes: Routes = [
     redirectTo: 'reactive'
   }
 ];
->>>>>>> Stashed changes
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -6,10 +6,7 @@
     "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-<<<<<<< HEAD
-=======
     "backend": "json-server --watch data/db.json",
->>>>>>> b72ad81767c0ad272214ce824481058d1b19e6a1
     "test": "ng test"
   },
   "private": true,
@@ -34,10 +31,7 @@
     "@angular/compiler-cli": "^17.1.0",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.1.0",
-<<<<<<< HEAD
-=======
     "json-server": "^0.17.4",
->>>>>>> b72ad81767c0ad272214ce824481058d1b19e6a1
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
@@ -45,8 +39,4 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.3.2"
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> b72ad81767c0ad272214ce824481058d1b19e6a1
