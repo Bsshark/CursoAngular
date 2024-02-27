@@ -1,0 +1,19 @@
+<side-menu></side-menu>
+<div class="row mt-3">
+  <div class="col-2"></div>
+  <div class="col-10">
+    <h1>Standalone Component - Page</h1>
+    <hr>
+
+    <div class="row">
+      <div class="col">
+        <p>Este componente no necesita ser importado en módulos</p>
+        <p>Porque es su propio módulo</p>
+
+        <!-- Contador -->
+        <counter-alone [counter]="5" (emit)="$event"></counter-alone>
+        <counter-alone [counter]="10"></counter-alone>
+      </div>
+    </div>
+  </div>
+</div>
