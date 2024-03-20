@@ -6,6 +6,7 @@ import { User } from '../interfaces/user.interface';
 import { AuthStatus } from '../interfaces/auth-status.enum';
 import { LoginResponse } from '../interfaces/login-response.interface';
 import { CheckTokenResponse } from '../interfaces/check-token-response.interface';
+import { RegisterResponse } from '../interfaces/register-response.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -40,6 +41,19 @@ export class AuthService {
       map(({user, token}) => this.setAuthentication(user, token)),
       catchError((err) => throwError(() => err.error.message))
     );
+  }
+
+  register(name: string, email: string, password: string): Observable<boolean> {
+    const url = `${this.baseUrl}/auth/register`;
+    const body = {name, email, password};
+
+    return this.http.post<RegisterResponse>(url, body).pipe(
+      map(({user, token}) => {
+        this.setAuthentication(user, token);
+        return true;
+      }),
+      catchError((err) => throwError(() => err.error.message))
+    )
   }
 
   checkAuthStatus(): Observable<boolean> {
